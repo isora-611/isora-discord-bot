@@ -24,10 +24,10 @@ class msgdetect(commands.Cog):
                                 "白飯沒了就說\n"
                                 "你給我補白飯！")
 
-        if "？" == message.content:
-            await message.channel.send(":question:")
-
-        if "?" == message.content:
+        if (
+            "？" == message.content
+            or "?" == message.content
+            ):
             await message.channel.send(":question:")
 
         if (f"<@{message.author.id}>") == message.content:
