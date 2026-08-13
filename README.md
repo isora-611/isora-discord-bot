@@ -1,1 +1,1 @@
-# isora-s-discord-bot
+# isora-discord-bot
