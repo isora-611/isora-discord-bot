@@ -42,7 +42,7 @@ class msgdetect(commands.Cog):
         if (
             message.author.id == #target id
             and "我是傻逼" in message.content
-        ):
+            ):
             await message.channel.send("對")
 
 async def setup(bot):
