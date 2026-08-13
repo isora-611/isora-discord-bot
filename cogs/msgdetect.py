@@ -34,13 +34,13 @@ class msgdetect(commands.Cog):
             await message.channel.send("@自己是有什麼心事= =")
 
         if (
-            "<@1007279246332416030>" in message.content
+            "<@target id>" in message.content
             and "是傻逼" in message.content
             ):
             await message.channel.send("對")
 
         if (
-            message.author.id == 1007279246332416030
+            message.author.id == #target id
             and "我是傻逼" in message.content
         ):
             await message.channel.send("對")
