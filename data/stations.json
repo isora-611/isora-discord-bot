@@ -1,0 +1,592 @@
+[
+  {
+    "Station": "動物園",
+    "StationEn": "Taipei Zoo",
+    "id": "BR01"
+  },
+  {
+    "Station": "木柵",
+    "StationEn": "Muzha",
+    "id": "BR02"
+  },
+  {
+    "Station": "萬芳社區",
+    "StationEn": "Wanfang Community",
+    "id": "BR03"
+  },
+  {
+    "Station": "萬芳醫院",
+    "StationEn": "Wanfang Hospital",
+    "id": "BR04"
+  },
+  {
+    "Station": "辛亥",
+    "StationEn": "Xinhai",
+    "id": "BR05"
+  },
+  {
+    "Station": "麟光",
+    "StationEn": "Linguang",
+    "id": "BR06"
+  },
+  {
+    "Station": "六張犁",
+    "StationEn": "Liuzhangli",
+    "id": "BR07"
+  },
+  {
+    "Station": "科技大樓",
+    "StationEn": "Technology Building",
+    "id": "BR08"
+  },
+  {
+    "Station": "大安",
+    "StationEn": "Daan",
+    "id": "BR09/R05"
+  },
+  {
+    "Station": "忠孝復興",
+    "StationEn": "Zhongxiao Fuxing",
+    "id": "BR10/BL15"
+  },
+  {
+    "Station": "南京復興",
+    "StationEn": "Nanjing Fuxing",
+    "id": "BR11/G16"
+  },
+  {
+    "Station": "中山國中",
+    "StationEn": "Zhongshan Junior High School",
+    "id": "BR12"
+  },
+  {
+    "Station": "松山機場",
+    "StationEn": "Songshan Airport",
+    "id": "BR13"
+  },
+  {
+    "Station": "大直",
+    "StationEn": "Dazhi",
+    "id": "BR14"
+  },
+  {
+    "Station": "劍南路",
+    "StationEn": "Jiannan Road",
+    "id": "BR15"
+  },
+  {
+    "Station": "西湖",
+    "StationEn": "Xihu",
+    "id": "BR16"
+  },
+  {
+    "Station": "港墘",
+    "StationEn": "Gangqian",
+    "id": "BR17"
+  },
+  {
+    "Station": "文德",
+    "StationEn": "Wende",
+    "id": "BR18"
+  },
+  {
+    "Station": "內湖",
+    "StationEn": "Neihu",
+    "id": "BR19"
+  },
+  {
+    "Station": "大湖公園",
+    "StationEn": "Dahu Park",
+    "id": "BR20"
+  },
+  {
+    "Station": "葫洲",
+    "StationEn": "Huzhou",
+    "id": "BR21"
+  },
+  {
+    "Station": "東湖",
+    "StationEn": "Donghu",
+    "id": "BR22"
+  },
+  {
+    "Station": "南港軟體園區",
+    "StationEn": "Nangang Software Park",
+    "id": "BR23"
+  },
+  {
+    "Station": "南港展覽館",
+    "StationEn": "Taipei Nangang Exhibition Center",
+    "id": "BR24/BL23"
+  },
+  {
+    "Station": "象山",
+    "StationEn": "Xiangshan",
+    "id": "R02"
+  },
+  {
+    "Station": "台北101/世貿",
+    "StationEn": "Taipei 101/World Trade Center",
+    "id": "R03"
+  },
+  {
+    "Station": "信義安和",
+    "StationEn": "Xinhai",
+    "id": "R04"
+  },
+  {
+    "Station": "大安森林公園",
+    "StationEn": "Daan Park",
+    "id": "R06"
+  },
+  {
+    "Station": "東門",
+    "StationEn": "Dongmen",
+    "id": "R07/O06"
+  },
+  {
+    "Station": "中正紀念堂",
+    "StationEn": "Chiang Kai-Shek Memorial Hall",
+    "id": "R08/G10"
+  },
+  {
+    "Station": "台大醫院",
+    "StationEn": "NTU Hospital",
+    "id": "R09"
+  },
+  {
+    "Station": "台北車站",
+    "StationEn": "Taipei Main Station",
+    "id": "R010/BL12"
+  },
+  {
+    "Station": "中山",
+    "StationEn": "Zhongshan",
+    "id": "R11/G14"
+  },
+  {
+    "Station": "雙連",
+    "StationEn": "Shuanglian",
+    "id": "R12"
+  },
+  {
+    "Station": "民權西路",
+    "StationEn": "Minquan W. Rd.",
+    "id": "R13/O11"
+  },
+  {
+    "Station": "圓山",
+    "StationEn": "Yuanshan",
+    "id": "R14"
+  },
+  {
+    "Station": "劍潭",
+    "StationEn": "Jiantan",
+    "id": "R15"
+  },
+  {
+    "Station": "士林",
+    "StationEn": "Shilin",
+    "id": "R16"
+  },
+  {
+    "Station": "芝山",
+    "StationEn": "Zhishan",
+    "id": "R17"
+  },
+  {
+    "Station": "明德",
+    "StationEn": "Mingde",
+    "id": "R18"
+  },
+  {
+    "Station": "石牌",
+    "StationEn": "Shipai",
+    "id": "R19"
+  },
+  {
+    "Station": "唭哩岸",
+    "StationEn": "Qilian",
+    "id": "R20"
+  },
+  {
+    "Station": "奇岩",
+    "StationEn": "Qiyan",
+    "id": "R21"
+  },
+  {
+    "Station": "北投",
+    "StationEn": "Beitou",
+    "id": "R22"
+  },
+  {
+    "Station": "新北投",
+    "StationEn": "Xinbeitou",
+    "id": "R22A"
+  },
+  {
+    "Station": "復興崗",
+    "StationEn": "Fuxinggang",
+    "id": "R23"
+  },
+  {
+    "Station": "忠義",
+    "StationEn": "Zhongyi",
+    "id": "R24"
+  },
+  {
+    "Station": "關渡",
+    "StationEn": "Guandu",
+    "id": "R25"
+  },
+  {
+    "Station": "竹圍",
+    "StationEn": "Zhuwei",
+    "id": "R26"
+  },
+  {
+    "Station": "紅樹林",
+    "StationEn": "Hongshulin",
+    "id": "R27"
+  },
+  {
+    "Station": "淡水",
+    "StationEn": "Tamsui",
+    "id": "R28"
+  },
+  {
+    "Station": "新店",
+    "StationEn": "Xindian",
+    "id": "G01"
+  },
+  {
+    "Station": "新店區公所",
+    "StationEn": "Xindian District Office",
+    "id": "G02"
+  },
+  {
+    "Station": "七張",
+    "StationEn": "Qizhang",
+    "id": "G03"
+  },
+  {
+    "Station": "小碧潭",
+    "StationEn": "Xiaobitan",
+    "id": "G03A"
+  },
+  {
+    "Station": "大坪林",
+    "StationEn": "Dapinglin",
+    "id": "G04/Y07"
+  },
+  {
+    "Station": "景美",
+    "StationEn": "Jingmei",
+    "id": "G05"
+  },
+  {
+    "Station": "萬隆",
+    "StationEn": "Wanlong",
+    "id": "G06"
+  },
+  {
+    "Station": "公館",
+    "StationEn": "Gongguan",
+    "id": "G07"
+  },
+  {
+    "Station": "台電大樓",
+    "StationEn": "Taipower Building",
+    "id": "G08"
+  },
+  {
+    "Station": "古亭",
+    "StationEn": "Guting",
+    "id": "G09/O05"
+  },
+  {
+    "Station": "小南門",
+    "StationEn": "Xiaonanmen",
+    "id": "G11"
+  },
+  {
+    "Station": "西門",
+    "StationEn": "Ximen",
+    "id": "G12/BL11"
+  },
+  {
+    "Station": "北門",
+    "StationEn": "Beimen",
+    "id": "G13"
+  },
+  {
+    "Station": "松江南京",
+    "StationEn": "Songjiang Nanjing",
+    "id": "G15/O08"
+  },
+  {
+    "Station": "台北小巨蛋",
+    "StationEn": "Taipei Arena",
+    "id": "G17"
+  },
+  {
+    "Station": "南京三民",
+    "StationEn": "Nanjing Sanmin",
+    "id": "G18"
+  },
+  {
+    "Station": "松山",
+    "StationEn": "Songshan",
+    "id": "G19"
+  },
+  {
+    "Station": "南勢角",
+    "StationEn": "Nanshijiao",
+    "id": "O01"
+  },
+  {
+    "Station": "景安",
+    "StationEn": "Jingan",
+    "id": "O02/Y11"
+  },
+  {
+    "Station": "永安市場",
+    "StationEn": "Yongan Market",
+    "id": "O03"
+  },
+  {
+    "Station": "頂溪",
+    "StationEn": "Dingxi",
+    "id": "O04"
+  },
+  {
+    "Station": "忠孝新生",
+    "StationEn": "Zhongxiao Xinsheng",
+    "id": "O07/BL14"
+  },
+  {
+    "Station": "行天宮",
+    "StationEn": "Xingtian Temple",
+    "id": "O09"
+  },
+  {
+    "Station": "中山國小",
+    "StationEn": "Zhongshan Elementary School",
+    "id": "O10"
+  },
+  {
+    "Station": "大橋頭",
+    "StationEn": "Daqiaotou",
+    "id": "O12"
+  },
+  {
+    "Station": "台北橋",
+    "StationEn": "Taipei Bridge",
+    "id": "O13"
+  },
+  {
+    "Station": "菜寮",
+    "StationEn": "Cailiao",
+    "id": "O14"
+  },
+  {
+    "Station": "三重",
+    "StationEn": "Sanchong",
+    "id": "O15"
+  },
+  {
+    "Station": "先嗇宮",
+    "StationEn": "Xianse Temple",
+    "id": "O16"
+  },
+  {
+    "Station": "頭前庄",
+    "StationEn": "Touqianzhuang",
+    "id": "O17/Y18"
+  },
+  {
+    "Station": "新莊",
+    "StationEn": "Xinzhuang",
+    "id": "O18"
+  },
+  {
+    "Station": "輔大",
+    "StationEn": "Fu Jen University",
+    "id": "O19"
+  },
+  {
+    "Station": "丹鳳",
+    "StationEn": "Danfeng",
+    "id": "O20"
+  },
+  {
+    "Station": "迴龍",
+    "StationEn": "Huilong",
+    "id": "O21"
+  },
+  {
+    "Station": "三重國小",
+    "StationEn": "Sanchong Elementary School",
+    "id": "O50"
+  },
+  {
+    "Station": "三和國中",
+    "StationEn": "Sanhe Junior High School",
+    "id": "O51"
+  },
+  {
+    "Station": "徐匯中學",
+    "StationEn": "St. Ignatius High School",
+    "id": "O52"
+  },
+  {
+    "Station": "三民高中",
+    "StationEn": "Sanmin Senior High School",
+    "id": "O53"
+  },
+  {
+    "Station": "蘆洲",
+    "StationEn": "Luzhou",
+    "id": "O54"
+  },
+  {
+    "Station": "頂埔",
+    "StationEn": "Dingpu",
+    "id": "BL01"
+  },
+  {
+    "Station": "永寧",
+    "StationEn": "Yongning",
+    "id": "BL02"
+  },
+  {
+    "Station": "土城",
+    "StationEn": "Tucheng",
+    "id": "BL03"
+  },
+  {
+    "Station": "海山",
+    "StationEn": "Haishan",
+    "id": "BL04"
+  },
+  {
+    "Station": "亞東醫院",
+    "StationEn": "Far Eastern Hospital",
+    "id": "BL05"
+  },
+  {
+    "Station": "府中",
+    "StationEn": "Fuzhong",
+    "id": "BL06"
+  },
+  {
+    "Station": "板橋",
+    "StationEn": "Banqiao",
+    "id": "BL07/Y16"
+  },
+  {
+    "Station": "新埔",
+    "StationEn": "Xinpu",
+    "id": "BL08"
+  },
+  {
+    "Station": "江子翠",
+    "StationEn": "Jiangzicui",
+    "id": "BL09"
+  },
+  {
+    "Station": "龍山寺",
+    "StationEn": "Longshan Temple",
+    "id": "BL10"
+  },
+  {
+    "Station": "善導寺",
+    "StationEn": "Shandao Temple",
+    "id": "BL13"
+  },
+  {
+    "Station": "忠孝敦化",
+    "StationEn": "Zhongxiao Dunhwa",
+    "id": "BL16"
+  },
+  {
+    "Station": "國父紀念館",
+    "StationEn": "Sun Yet-Sen Memorial Hall",
+    "id": "BL17"
+  },
+  {
+    "Station": "市政府",
+    "StationEn": "Taipei City Hall",
+    "id": "BL18"
+  },
+  {
+    "Station": "永春",
+    "StationEn": "Yongchun",
+    "id": "BL19"
+  },
+  {
+    "Station": "後山埤",
+    "StationEn": "Houshanpi",
+    "id": "BL20"
+  },
+  {
+    "Station": "昆陽",
+    "StationEn": "Kunyang",
+    "id": "BL21"
+  },
+  {
+    "Station": "南港",
+    "StationEn": "Nangang",
+    "id": "BL22"
+  },
+  {
+    "Station": "十四張",
+    "StationEn": "Shisizhang",
+    "id": "Y08"
+  },
+  {
+    "Station": "秀朗橋",
+    "StationEn": "Xiulang Bridge",
+    "id": "Y09"
+  },
+  {
+    "Station": "景平",
+    "StationEn": "Jingping",
+    "id": "Y10"
+  },
+  {
+    "Station": "中和",
+    "StationEn": "Zhonghe",
+    "id": "Y12"
+  },
+  {
+    "Station": "橋和",
+    "StationEn": "Qiaohe",
+    "id": "Y13"
+  },
+  {
+    "Station": "中原",
+    "StationEn": "Zhongyuan",
+    "id": "Y14"
+  },
+  {
+    "Station": "板新",
+    "StationEn": "Banxin",
+    "id": "Y15"
+  },
+  {
+    "Station": "新埔民生",
+    "StationEn": "Xinpu Minsheng",
+    "id": "Y17"
+  },
+  {
+    "Station": "幸福",
+    "StationEn": "Xingfu",
+    "id": "Y19"
+  },
+  {
+    "Station": "新北產業園區",
+    "StationEn": "New Taipei Industrial Park",
+    "id": "Y20"
+  }
+]
