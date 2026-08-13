@@ -2,7 +2,7 @@ from ollama import chat
 
 def ai_chat(messages):
     response = chat(
-        model="gemma4:e4b",
+        model="",
         messages=messages,
         think=False
     )
