@@ -203,11 +203,14 @@ class Moderation(commands.Cog):
         
         if message.author.guild_permissions.administrator:
             return
+
+        if any(role.id == 1496527339763535902 for role in message.author.roles):
+            return
         
         try:
             await message.author.ban(
                 reason="在禁止頻道中發言,爽啦憨仔包一包滾出去",
-                delete_message_seconds=86400
+                delete_message_seconds=3600
             )
             print(f"{message.author} has been banned")
 
