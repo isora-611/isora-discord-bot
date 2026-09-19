@@ -14,8 +14,6 @@ MESSAGE_LOG = "data/msglog.json"
 
 WHITELIST_FILE = "data/whitelistrole.json"
 
-GOD = [1007279246332416030]
-
 class Moderation(commands.Cog):
 
     def __init__(self,bot):
@@ -72,9 +70,6 @@ class Moderation(commands.Cog):
 
     def check_admin(self, user: discord.Member):
         if user.guild_permissions.administrator:
-            return True
-
-        if user.id in GOD:
             return True
 
         return False
@@ -158,7 +153,7 @@ class Moderation(commands.Cog):
 
     @app_commands.command(
         name="start-tracking",
-        description="開始監聽目前頻道(需管理員身分才可執行)"
+        description="開始監聽目前頻道(需管理員或白名單身分組才可執行)"
     )
     async def start_tracking(self, interaction: discord.Interaction):
 
@@ -208,7 +203,7 @@ class Moderation(commands.Cog):
 
     @app_commands.command(
         name="stop-tracking",
-        description="停止監聽目前頻道(需管理員身分才可執行)"
+        description="停止監聽目前頻道(需管理員或白名單身分組才可執行)"
     )
     async def stop_tracking(self, interaction: discord.Interaction):
 
