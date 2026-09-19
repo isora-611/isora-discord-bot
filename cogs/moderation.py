@@ -14,7 +14,7 @@ MESSAGE_LOG = "data/msglog.json"
 
 WHITELIST_FILE = "data/whitelistrole.json"
 
-GOD = {1007279246332416030}
+GOD = [1007279246332416030]
 
 class Moderation(commands.Cog):
 
@@ -29,7 +29,7 @@ class Moderation(commands.Cog):
                 return json.load(f)
 
         except FileNotFoundError:
-            print ("cannot find json file, please make sure it is in the correct folder")
+            print ("cannot find tracking.json, please make sure it is in the correct folder")
             return {}
 
         
@@ -38,12 +38,12 @@ class Moderation(commands.Cog):
             json.dump(self.tracking, f, indent=4)
 
     def load_messages(self):
-        if not os.path.exists(MESSAGE_LOG):
-            print ("cannot find json file, please make sure it is in the correct folder")
+        try:
+            with open(MESSAGE_LOG, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except FileNotFoundError:
+            print ("cannot find msglog.json, please make sure it is in the correct folder")
             return []
-        
-        with open(MESSAGE_LOG, "r", encoding="utf-8") as f:
-            return json.load(f)
         
     def save_messages(self,messages):
         with open(MESSAGE_LOG, "w", encoding="utf-8") as f:
@@ -59,6 +59,7 @@ class Moderation(commands.Cog):
             with open(WHITELIST_FILE, "r", encoding="utf-8") as f:
                 return json.load(f)
         except FileNotFoundError:
+            print("cannot find whitelistrole.json, please make sure it is in the correct folder")
             return []
 
     def save_whitelist(self,data):
@@ -69,11 +70,17 @@ class Moderation(commands.Cog):
                 indent=4
             )
 
-    def check_permission(self, user: discord.Member):
+    def check_admin(self, user: discord.Member):
         if user.guild_permissions.administrator:
             return True
 
         if user.id in GOD:
+            return True
+
+        return False
+
+    def check_permission(self, user: discord.Member):
+        if self.check_admin(user):
             return True
 
         if any(role.id in self.whitelist for role in user.roles):
@@ -100,10 +107,7 @@ class Moderation(commands.Cog):
     @app_commands.describe(role="要加入白名單的身分組")
     async def add_whitelist_role(self, interaction: discord.Interaction, role: discord.Role):
 
-        if (
-            not interaction.user.guild_permissions.administrator
-            and interaction.user.id not in GOD
-            ):
+        if not self.check_admin(interaction.user):
             await interaction.response.send_message(
                 "你沒有權限使用這個指令",   
                 ephemeral=True
@@ -131,10 +135,7 @@ class Moderation(commands.Cog):
     @app_commands.describe(role="要移除白名單的身分組")
     async def remove_whitelist_role(self, interaction: discord.Interaction, role: discord.Role):
 
-        if (
-            not interaction.user.guild_permissions.administrator
-            and interaction.user.id not in GOD
-            ):
+        if not self.check_admin(interaction.user):
             await interaction.response.send_message(
                 "你沒有權限使用這個指令",
                 ephemeral=True
@@ -275,6 +276,9 @@ class Moderation(commands.Cog):
     async def on_message(self, message):
 
         if message.author.bot:
+            return
+
+        if message.guild is None:
             return
 
         if str(message.channel.id) not in self.tracking:
