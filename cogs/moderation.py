@@ -109,6 +109,13 @@ class Moderation(commands.Cog):
                 )
             return
 
+        if role.id == interaction.guild_id:
+            await interaction.response.send_message(
+                "不可加入everyone身分組",
+                ephemeral=True
+                )
+            return
+
         if role.id in self.whitelist:
             await interaction.response.send_message(
                 f"身分組 {role.mention} 已經在白名單中了",
