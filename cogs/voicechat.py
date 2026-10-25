@@ -57,18 +57,10 @@ class voicechat(commands.Cog):
             )
             return
 
-        if interaction.user.voice is None:
-            await interaction.response.send_message(
-                "你不在語音頻道中",
-                ephemeral=True
-            )
-            return
-
         await voice.disconnect()
 
         await interaction.response.send_message(
-            "已離開語音頻道",
-            ephemeral=True
+            "已離開語音頻道"
         )
 
 async def setup(bot):
