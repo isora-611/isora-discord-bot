@@ -33,17 +33,5 @@ class msgdetect(commands.Cog):
         if (f"<@{message.author.id}>") == message.content:
             await message.channel.send("@自己是有什麼心事= =")
 
-        if (
-            "<@target id>" in message.content
-            and "是傻逼" in message.content
-            ):
-            await message.channel.send("對")
-
-        if (
-            message.author.id == #target id
-            and "我是傻逼" in message.content
-            ):
-            await message.channel.send("對")
-
 async def setup(bot):
     await bot.add_cog(msgdetect(bot))
