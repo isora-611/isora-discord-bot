@@ -24,35 +24,38 @@ class ChatBot(commands.Cog):
         if self.bot.user not in message.mentions:
             return
 
-        messages = get_history(
+        try:
+            messages = get_history(
             message.guild.id,
             message.channel.id,
             message.author.id
-        )
-
-        content = message.content
-
-        for user in message.mentions:
-            content = content.replace(user.mention, "")
-
-        content = content.strip()
-
-        if not content:
-            return
-
-        user_message(messages, content)
-
-        async with message.channel.typing():
-            reply = await asyncio.to_thread(
-                ai_chat,
-                messages
             )
 
-        ai_response(messages, reply)
+            content = message.content
 
-        trim_history(messages)
+            for user in message.mentions:
+                content = content.replace(user.mention, "")
 
-        await message.reply(reply)
+            content = content.strip()
+
+            if not content:
+                return
+
+            user_message(messages, content)
+
+            async with message.channel.typing():
+                reply = await asyncio.to_thread(
+                    ai_chat,
+                    messages
+                )
+                ai_response(messages, reply)
+
+                trim_history(messages)
+            
+            await message.reply(reply)
+
+        except :
+            await message.reply("AI對話功能目前尚未開啟")
 
 async def setup(bot):
     await bot.add_cog(ChatBot(bot))
