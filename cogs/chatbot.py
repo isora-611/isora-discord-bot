@@ -54,7 +54,7 @@ class ChatBot(commands.Cog):
             
             await message.reply(reply)
 
-        except :
+        except:
             await message.reply("AI對話功能目前尚未開啟")
 
 async def setup(bot):
